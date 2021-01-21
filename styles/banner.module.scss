@@ -1,0 +1,35 @@
+.banner {
+  grid-area: banner;
+  width: 100%;
+  background-image: linear-gradient(black 50%, white 50%);
+  height: 100vh;
+  /* border: 1px solid red; */
+
+  .banner-section {
+    background-image: url("https://images.contentstack.io/v3/assets/blt137524604e62b5cb/blt971bfb34d4e547b8/5f50e9400ab106265a188450/Home-hero-banner-new@3x.png?auto=webp&quality=100&format=pjpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    // width: 95%;
+    margin: auto;
+  }
+  .banner-head {
+    position: relative;
+    text-align: center;
+    padding: 125px 0 25px;
+    color: black;
+    width: 60%;
+    margin: auto;
+    // z-index: 2;
+
+    h1 {
+      font-size: 50px;
+      line-height: 48px;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      text-align: center;
+    }
+  }
+}
