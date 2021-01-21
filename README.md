@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next SSR COMPANY
 
-## Getting Started
+This is project is made to learn the basic of server side rendring
+In this project we fetch the data from json file which is hosted on github at the server side and user get the all the data at first request
 
-First, run the development server:
+## folder structure
 
-```bash
-npm run dev
-# or
-yarn dev
+```sh
+.
+├── components
+│   ├── banner.jsx
+│   ├── footer.jsx
+│   ├── footer.module.scss
+│   └── Navigation.jsx
+├── fontawesome.js
+├── package.json
+├── package-lock.json
+├── pages
+│   ├── api
+│   │   └── hello.js
+│   ├── _app.js
+│   ├── CS
+│   │   └── index.js
+│   ├── index.js
+│   └── RE
+│       └── index.js
+├── public
+│   ├── assest
+│   │   ├── banner
+│   │   │   ├── contentstack.jpg
+│   │   │   └── surfboard.png
+│   │   └── logo
+│   │       ├── contentstack.png
+│   │       └── surfboard.svg
+│   ├── favicon.ico
+│   └── vercel.svg
+├── README.md
+└── styles
+    ├── banner.module.scss
+    ├── globals.css
+    ├── Home.module.css
+    └── Navigation.module.scss
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Install the dependencies and start the server.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### prerequisite
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. vscode editor
+2. node js installed
+3. npm installed
 
-## Learn More
+### steps
 
-To learn more about Next.js, take a look at the following resources:
+1. > clone this project
+2. > go into to the the project folder
+3. > open the terminal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. > open vscode using following command
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
+$ code .
+```
 
-## Deploy on Vercel
+5. > Install the dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+$ npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+
+6. > run the project
+
+```sh
+$ npm run start
+```
+
+### Link to server
+
+[Next SSR COMAPNY](https://next-srr-company.vercel.app/)

@@ -2,8 +2,6 @@ import Navigation from "../components/Navigation";
 import Banner from "../components/banner";
 import Footer from "../components/footer";
 
-import axios from "axios";
-
 function Home(props) {
   const users = props.users[0];
   const logo = {

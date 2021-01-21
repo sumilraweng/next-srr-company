@@ -1,5 +1,5 @@
 import Banner from "../../components/banner";
-import axios from "axios";
+
 import Footer from "../../components/footer";
 import Navigation from "../../components/Navigation";
 
