@@ -9,26 +9,20 @@ function Footer(props) {
       <ul>
         <li>
           {" "}
-          <a href={props.link.twitter}>
+          <a href={link.twitter}>
             <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>{" "}
         </li>
         <li>
           {" "}
-          <a href={props.link.linkedin}>
+          <a href={link.linkedin}>
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>{" "}
         </li>
         <li>
           {" "}
-          <a href={props.link.facebook}>
+          <a href={link.facebook}>
             <FontAwesomeIcon icon={["fab", "facebook"]} />
-          </a>{" "}
-        </li>
-        <li>
-          {" "}
-          <a href={props.link.instagram}>
-            <FontAwesomeIcon icon={["fab", "instagram"]} />
           </a>{" "}
         </li>
       </ul>

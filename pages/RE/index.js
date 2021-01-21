@@ -1,6 +1,6 @@
-import Banner from "./banner";
+import Banner from "../../components/banner";
 import axios from "axios";
-import Footer from "./footer";
+import Footer from "../../components/footer";
 import Navigation from "../../components/Navigation";
 
 function RE(props) {
@@ -15,6 +15,8 @@ function RE(props) {
       <Banner
         bannerHead={users.content.heading}
         bannerPara={users.content.subHeading}
+        bannerImage={users.content.image}
+        color="white"
       />
       <Footer link={users.footerLinks} />
     </div>
@@ -22,9 +24,10 @@ function RE(props) {
 }
 
 export const getStaticProps = async (context) => {
-  let { data } = await axios.get(
+  let response = await fetch(
     "https://mistycal98.github.io/static-json-files/raweng.json"
   );
+  let data = await response.json();
   return {
     props: {
       users: [...data],

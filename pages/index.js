@@ -10,17 +10,6 @@ function Home(props) {
     src: users.logo,
     width: 100,
   };
-  // return (
-  //   <div>
-  //     {" "}
-  //     <Navigation logo={logo} />{" "}
-  //     <Banner
-  //       bannerHead={users.content.heading}
-  //       bannerPara={users.content.subHeading}
-  //     />
-  //   <Footer link={users.footerLinks} />
-  // </div>
-  // );
 
   return (
     <div>
@@ -29,6 +18,8 @@ function Home(props) {
       <Banner
         bannerHead={users.content.heading}
         bannerPara={users.content.subHeading}
+        bannerImage={users.content.image}
+        color="black"
       ></Banner>
       <Footer link={users.footerLinks} />
     </div>
@@ -36,9 +27,11 @@ function Home(props) {
 }
 
 export const getStaticProps = async (context) => {
-  let { data } = await axios.get(
+  const response = await fetch(
     "https://mistycal98.github.io/static-json-files/surfboard.json"
   );
+  const data = await response.json();
+
   return {
     props: {
       users: [...data],

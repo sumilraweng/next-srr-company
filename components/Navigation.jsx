@@ -15,10 +15,10 @@ const Navigation = (props) => {
           <li className={styles["nav-item"]}>
             <Link href="/"> Home</Link>
           </li>
-          <li className={["nav-item"]}>
+          <li className={styles["nav-item"]}>
             <Link href="/RE"> Raw-Engineering</Link>
           </li>
-          <li className={"nav-item"}>
+          <li className={styles["nav-item"]}>
             <Link href="/CS">Contentstack</Link>
           </li>
         </ul>
